@@ -1,0 +1,447 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>Efarming | Home</title>
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+
+  <style>
+
+    body { background: #efefef url('/static/img/bg-img/bg1.png') no-repeat;  height: 100%; 
+    
+      
+      
+      background-size: cover;
+    }
+    
+    
+    
+    .login-page {
+      width: 360px;
+      padding: 8% 0 0;
+      margin: auto;
+    }
+    .form {
+      position: relative;
+      z-index: 1;
+      background: #FFFFFF;
+      max-width: 360px;
+      margin: 0 auto 100px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .form input {
+      font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .form button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #4CAF50;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+    .form button:hover,.form button:active,.form button:focus {
+      background: #43A047;
+    }
+    .form .message {
+      margin: 15px 0 0;
+      color: #b3b3b3;
+      font-size: 12px;
+    }
+    .form .message a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    .form .register-form {
+      display: none;
+    }
+     
+    
+    
+    
+    </style>
+
+
+
+
+<script>
+
+
+  $('.message a').click(function(){
+     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+  });
+  
+  
+  
+  </script>
+
+
+
+
+
+
+
+</head>
+<!-- 
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+-->
+
+
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="spinner"></div>
+    </div>
+  
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+      <!-- Top Header Area -->
+  
+  
+      <!-- Navbar Area -->
+      <div class="famie-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="famieNav">
+              <!-- Nav Brand -->
+              <a href="index.html" class="nav-brand"><img src="{% static 'img/core-img/logo4.png' %}" alt=""></a>
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+              <!-- Menu -->
+              <div class="classy-menu">
+                <!-- Close Button -->
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+                <!-- Navbar Start -->
+                <div class="classynav">
+                  <ul>
+                    <li ><a href="/index">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   <!-- <li><a href="#">Pages</a>
+                      <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                          <li><a href="farming-practice.html">Farming Practice</a></li>
+                        <li><a href="shop.html">Shop</a>
+                          <ul class="dropdown">
+                            <li><a href="our-product.html">Our Products</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="news.html">News</a>
+                          <ul class="dropdown">
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="news-details.html">News Details</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </li>-->
+                    <li><a href="our-product.html">Our Product</a></li>
+                 <!--   <li><a href="farming-practice.html">Farming Practice</a></li>
+                    <li><a href="news.html">News</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/register">Register</a></li>
+                    <li class="active"><a href="/login">Login</a></li>
+                  </ul>
+                  <!-- Search Icon -->
+                <!--  <div id="searchIcon">
+                    <i class="icon_search" aria-hidden="true"></i>
+                  </div>-->
+                  <!-- Cart Icon -->
+                <!--  <div id="cartIcon">
+                    <a href="#">
+                      <i class="icon_cart_alt" aria-hidden="true"></i>
+                      <span class="cart-quantity">5</span>
+                    </a>
+                  </div> -->
+                </div>
+                <!-- Navbar End -->
+              </div>
+            </nav>
+  
+            <!-- Search Form -->
+            <div class="search-form">
+              <form action="#" method="get">
+                <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                <button type="submit" class="d-none"></button>
+              </form>
+              <!-- Close Icon -->
+              <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+  
+
+
+
+
+
+<div class="login-page">
+  <div class="form">
+    
+    <form class="login-form" action="#" method="POST">
+
+      {% csrf_token %}
+      <h3>LOGIN</h3>
+      <input type="text" name="username" placeholder="Email" required>
+      <input type="password" name="password" placeholder="password" required>
+      <!--<input type="submit" value="Login">  -->
+      <button type='submit'>login</button>
+      <p class="message">Not registered? <a href="/register">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  <!-- ##### Footer Area Start ##### -->
+  <footer class="footer-area">
+    <!-- Main Footer Area -->
+    <div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url(img/bg-img/3.jpg);">
+      <div class="container">
+        <div class="row">
+
+          <!-- Single Footer Widget Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-widget mb-80">
+              <a href="#" class="foo-logo d-block mb-30"><img src="img/core-img/logo2.png" alt=""></a>
+              <p>Lorem ipsum dolor sit amet, consecte stare adipiscing elit. In act honcus risus atiner Pellentesque risus.</p>
+              <div class="contact-info">
+                <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>120 Raymond Rd, New York</span></p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.deercreative@gmail.com</span></p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i><span>+84 223 9000</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Footer Widget Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-widget mb-80">
+              <h5 class="widget-title">QUICK LINK</h5>
+              <!-- Footer Widget Nav -->
+              <nav class="footer-widget-nav">
+                <ul>
+                  <li><a href="#">Purchase</a></li>
+                  <li><a href="#">Policities</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Return</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Guide</a></li>
+                  <li><a href="#">Standard</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Brands</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Single Footer Widget Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-widget mb-80">
+              <h5 class="widget-title">RECENT NEWS</h5>
+
+              <!-- Single Recent News Start -->
+              <div class="single-recent-blog d-flex align-items-center">
+                <div class="post-thumbnail">
+                  <img src="img/bg-img/4.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <a href="#" class="post-title">WA’s largest farming business on the market</a>
+                  <div class="post-date">18 Aug 2018</div>
+                </div>
+              </div>
+
+              <!-- Single Recent News Start -->
+              <div class="single-recent-blog d-flex align-items-center">
+                <div class="post-thumbnail">
+                  <img src="img/bg-img/5.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <a href="#" class="post-title">Beef retail prices hit a record</a>
+                  <div class="post-date">18 Aug 2018</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Single Footer Widget Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-widget mb-80">
+              <h5 class="widget-title">STAY CONNECTED</h5>
+              <!-- Footer Social Info -->
+              <div class="footer-social-info">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span>Twitter</span>
+                </a>
+                <a href="#">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  <span>Pinterest</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area  -->
+    <div class="copywrite-area">
+      <div class="container">
+        <div class="copywrite-text">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-nav">
+                <nav>
+                  <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Produce</a></li>
+                    <li><a href="#">Practice</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ##### Footer Area End ##### -->
+
+  <!-- ##### All Javascript Files ##### -->
+  <!-- jquery 2.2.4  -->
+
+
+
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- Owl Carousel js -->
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <!-- Classynav -->
+  <script src="{% static 'js/classynav.js' %}"></script>
+  <!-- Wow js -->
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <!-- Sticky js -->
+  <script src="{% static 'js/jquery.sticky.js' %}"></script>
+  <!-- Magnific Popup js -->
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <!-- Scrollup js -->
+  <script src="{% static 'js/jquery.scrollup.min.js' %}"></script>
+  <!-- Jarallax js -->
+  <script src="{% static 'js/jarallax.min.js' %}"></script>
+  <!-- Jarallax Video js -->
+  <script src="{% static 'js/jarallax-video.min.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
+
